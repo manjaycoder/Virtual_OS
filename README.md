@@ -31,3 +31,26 @@ A visually rich, desktop-style **Virtual Operating System (VOS)** built as a sim
 
 > Add your own screenshots in a `/screenshots` folder
 
+---
+
+## 📂 Project Structure
+
+virtual-operating-system/
+│
+├── apps/ # Music player, Paint, Notepad, etc.
+├── desktop/ # Main desktop UI and app icons
+├── system/ # Settings, wallpaper, about info
+├── assets/ # Icons, images, wallpapers
+├── index.html # Main launcher
+├── style.css # Global styles
+└── main.js # Logic and app initialization
+
+---
+
+## 🚀 Getting Started
+
+### Clone the Repository
+
+```bash
+git clone https://github.com/your-username/virtual-operating-system.git
+cd virtual-operating-system
