@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WebOS Demo</title>
+    
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <div class="desktop">
+        
+         <div class="icon" draggable="true" data-app="explorer">
+            <img src="https://cdn-icons-png.flaticon.com/512/732/732220.png" alt="File Explorer" width="48">
+            <span>File Explorer</span>
+        </div>
+        <!-- <div class="icon" draggable="true" data-app="notepad">
+            <img src="https://cdn-icons-png.flaticon.com/512/837/837548.png" alt="Notepad" width="48">
+            <span>Notepad</span>
+        </div> -->
+        <!-- <div class="icon" draggable="true" data-app="paint">
+            <img src="https://cdn-icons-png.flaticon.com/512/2819/2819194.png" alt="Paint" width="48">
+            <span>Paint</span>
+        </div> -->
+        
+        <!-- Windows Container -->
+        <div class="windows-container"></div>
+        
+        <!-- Taskbar -->
+        <div class="taskbar">
+            
+            <button class="start-button">Start </button>
+            <div class="taskbar-icons"></div>
+            <div class="system-tray">
+                <div class="notification-icon">🔔</div>
+                <span class="date"></span>
+                <span class="clock"></span>
+            </div>
+        </div>
+        
+        <!-- Start Menu -->
+        <div class="start-menu">
+            <div class="search-box">
+                <input type="text" placeholder="Search...">
+            </div>
+            <div class="app-list">
+                <div class="app-item" data-app="explorer">
+                    <img src="https://cdn-icons-png.flaticon.com/512/732/732220.png" width="20">
+                    <span>File Explorer</span>
+                </div>
+                <div class="app-item" data-app="notepad">
+                    <img src="https://cdn-icons-png.flaticon.com/512/837/837548.png" width="20">
+                    <span>Notepad</span>
+                </div>
+                <!-- Sonic Game Container (hidden by default) -->
+
+                <div class="app-item" data-app="calculator">
+                    <img src="https://cdn-icons-png.flaticon.com/512/210/210426.png" width="20">
+                    <span>Calculator</span>
+                </div>
+                <div class="app-item" data-app="paint">
+                    <img src="https://cdn-icons-png.flaticon.com/512/2819/2819194.png" width="20">
+                    <span>Paint</span>
+                </div>
+                <div class="app-item" data-app="browser">
+                    <img src="https://cdn-icons-png.flaticon.com/512/2991/2991148.png" width="20">
+                    <span>Web Browser</span>
+                </div>
+                <div class="app-item" data-app="media">
+                    <img src="https://cdn-icons-png.flaticon.com/512/3106/3106921.png" width="20">
+                    <span>Media Player</span>
+                </div>
+                <div class="app-item" data-app="settings">
+                    <img src="https://cdn-icons-png.flaticon.com/512/2092/2092653.png" width="20">
+                    <span>Settings</span>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Context Menu -->
+        <div class="context-menu">
+            <div class="context-item" data-action="refresh">Refresh</div>
+            <div class="context-item" data-action="new-folder">New Folder</div>
+            <div class="context-item" data-action="settings">Settings</div>
+            <div class="context-item" data-action="about">About WebOS</div>
+        </div>
+        
+        <!-- Notification Center -->
+        <div class="notification-center">
+            <div class="notification-header">
+                <h3>Notifications</h3>
+                <button class="clear-all">Clear All</button>
+            </div>
+            <div class="notification-list"></div>
+        </div>
+    </div>
+
+    <script src="index.js"></script>
+</body>
+</html>
